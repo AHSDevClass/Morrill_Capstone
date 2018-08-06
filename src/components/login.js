@@ -6,7 +6,7 @@ export default class Login extends Component {
     return (
       <div className="login">
         <Header />
-        login
+        ...login
       </div>
     )
   }

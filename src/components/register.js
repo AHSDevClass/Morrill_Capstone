@@ -6,7 +6,7 @@ export default class Register extends Component {
     return (
       <div className="register">
         <Header />
-        register
+        ...register
       </div>
     )
   }
