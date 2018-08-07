@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Header extends Component {
   render() {
-    const { small, authenticated } = this.props;
+    const { small } = this.props;
     if(!small) {
       return (
         <div className='header'>
