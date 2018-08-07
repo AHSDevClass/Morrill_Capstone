@@ -6,6 +6,7 @@ export default class Home extends Component {
     return (
       <div className="home">
         <Header small={false} />
+        <input className="home__search" type="search" name="search" placeholder='&#xf002; Search'></input>
         home
       </div>
     )

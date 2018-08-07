@@ -14,6 +14,7 @@ import Layout from './components/layout';
 import Home from './components/home';
 import Register from './components/register';
 import Login from './components/login';
+import Dashboard from './components/dashboard';
 
 
 function main() {
@@ -26,6 +27,7 @@ function main() {
             <Route path="/home" component={Home} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
+            <Route path="/dashboard" component={Dashboard} />
           </Layout>
         </Switch>
       </BrowserRouter>

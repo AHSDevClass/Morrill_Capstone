@@ -25,6 +25,7 @@ export default class Header extends Component {
       return (
         <div className='small-header'>
           <h1 className='small-header__title'>Library</h1>
+          <a className='small-header__link'>Logout</a>
           <div className='small-header__bar'></div>
         </div>
       )

@@ -96,6 +96,14 @@
         color: $color-cyan;
     }
 
+    &__link {
+        grid-row: title-s/title-e;
+        grid-column: 1/-1;
+
+        text-align: right;
+        margin-right: 30px;
+    }
+
     &__bar {
         grid-row: bar-s/bar-e;
         grid-column: 1/-1;

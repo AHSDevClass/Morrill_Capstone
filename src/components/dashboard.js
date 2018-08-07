@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Header from './header';
 
-export default class Register extends Component {
+export default class Dashboard extends Component {
   render() {
     return (
-      <div className="register">
+      <div>
         <Header small={true} />
-        ...register
+        dashboard
       </div>
     )
   }
