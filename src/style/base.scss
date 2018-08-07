@@ -1,0 +1,23 @@
+html {
+    font-size: 75%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-main;
+    color: $color-gray;
+    font-weight: 400;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: [s] 5rem [content-s] 1fr [content-e] 5rem [e];
+    grid-template-rows: [header-s small-s] 8rem [small-e page-s] 8rem [header-e content-s] 1fr [content-e page-e];
+}

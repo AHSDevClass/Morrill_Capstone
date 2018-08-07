@@ -1,0 +1,107 @@
+.header {
+    grid-row: header-s/header-e;
+    grid-column: s/e;
+
+    display: grid;
+    grid-template-rows: [title-s] 10rem [title-e bar-s] 3rem [bar-e];
+    grid-template-columns: repeat(auto-fit, 1fr);
+
+    &__title {
+        grid-row: title-s/title-e;
+        grid-column: title-s/title-e;
+
+        height: 10rem;
+        
+        font-size: 5rem;
+        line-height: 9rem;
+
+        text-align: center;
+        align-self: center;
+        color: $color-cyan;
+        background-color: $color-light-gray;
+    }
+
+    &__links {
+        grid-row: title-s/title-e;
+        grid-column: links-s/links-e;
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 75px 75px;
+
+        grid-column-gap: 22px;
+
+        margin: 5px 30px;
+
+        justify-self: end;
+
+        font-family: $font-serif;
+
+        &__link {
+            text-align: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__bar {
+        grid-row: bar-s/bar-e;
+        grid-column: s/e;
+
+        height: 3rem;
+        width: 100vw;
+        background-color: $color-gray;
+        color: white;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 150px);
+        grid-template-rows: 1fr;
+
+        align-items: center;
+        justify-items: center;
+
+        &__link {
+            grid-row: 1/-1;
+
+            margin-left: 50px;
+
+            font-family: $font-serif;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.small-header {
+    grid-row: small-s/small-e;
+    grid-column: s/e;
+
+    margin-top: 5px;
+
+    display: grid;
+    grid-template-rows: [title-s] 1fr [title-e bar-s] 3rem [bar-e];
+    grid-template-columns: 1fr;
+
+    &__title {
+        grid-row: title-s/title-e;
+        grid-column: 1/-1;
+
+        font-size: 1.5rem;
+        text-align: center;
+        align-self: center;
+        color: $color-cyan;
+    }
+
+    &__bar {
+        grid-row: bar-s/bar-e;
+        grid-column: 1/-1;
+
+        width: 100vw;
+        height: 3rem;
+        background-color: $color-gray;
+    }
+}
