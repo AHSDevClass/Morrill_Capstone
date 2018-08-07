@@ -22,6 +22,7 @@ function main() {
         <Switch>
           <Layout>
             <Route path="/" exact component={Home} />
+            <Route path="/home" component={Home} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
           </Layout>
