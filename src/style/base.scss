@@ -18,6 +18,6 @@ body {
 
 .layout {
     display: grid;
-    grid-template-columns: [s] 5rem [content-s] 1fr [content-e] 5rem [e];
+    grid-template-columns: [s] 1fr [e];
     grid-template-rows: [s header-s small-s] 8rem [small-e page-s] 8rem [header-e content-s] 1fr [content-e page-e e];
 }

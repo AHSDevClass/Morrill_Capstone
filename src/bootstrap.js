@@ -14,7 +14,7 @@ import Layout from './components/layout';
 import Home from './components/home';
 import Register from './components/register';
 import Login from './components/login';
-import Dashboard from './components/dashboard';
+import Dashboard from './components/dashboard/dashboard';
 
 
 function main() {
