@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
+import { Button } from './button';
 
 export default class Header extends Component {
+  handleAccount = () => {
+    this.props.history.push('/dashboard');
+  }
+
   render() {
     const { small } = this.props;
     if(!small) {
       return (
         <div className='header'>
-          <h1 className='header__title'>Library</h1>
+          <h1 className='header__title'>LocalLibrary</h1>
           <div className='header__links'>
-            <a className='header__links__account header__links__link'>My Account</a>
+            <Button callback={() => this.handleAccount()} className='header__links__account header__links__link'>My Account</Button>
             <a className='header__links__auth header__links__link'>Logout</a>
           </div>
           <div className='header__bar'>
@@ -24,7 +29,7 @@ export default class Header extends Component {
     } else {
       return (
         <div className='small-header'>
-          <h1 className='small-header__title'>Library</h1>
+          <h1 className='small-header__title'>LocalLibrary</h1>
           <a className='small-header__link'>Logout</a>
           <div className='small-header__bar'></div>
         </div>

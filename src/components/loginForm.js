@@ -11,8 +11,19 @@ class LoginForm extends Component {
         <FormTitle className="login-form__title" text="Login" />
         <Field 
           className="login-form__email" 
-          component={FormInput} name="email" 
+          component={FormInput} 
+          name="email" 
           type="email" 
+          title="Email" 
+          placeholder="Enter email" 
+        />
+        <Field 
+          className="login-form__pass" 
+          component={FormInput} 
+          name="password" 
+          type="password" 
+          title="Password" 
+          placeholder="Enter password" 
         />
       </form>
     )
