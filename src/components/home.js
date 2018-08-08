@@ -18,9 +18,6 @@ export default class Home extends Component {
           <div className="home__books__book">Book Eight</div>
           <div className="home__books__book">Book Nine</div>
           <div className="home__books__book">Book Ten</div>
-          <div className="home__books__book">Book Eleven</div>
-          <div className="home__books__book">Book Twelve</div>
-          <div className="home__books__book">Book Thirteen</div>
         </div>
       </div>
     )
