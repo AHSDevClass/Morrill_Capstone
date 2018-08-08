@@ -15,7 +15,7 @@
         grid-row: search-s/search-e;
         grid-column: content-s/content-e;
 
-        font-family: 'Font Awesome\ 5.2 Free', $font-main;
+        font-family: 'Font Awesome\ 5 Free', $font-main;
 
         width: 40rem;
         height: 3rem;
@@ -25,6 +25,25 @@
         padding: 0px 25px;
         font-size: 1.5rem;
         line-height: 1.8rem;
+    }
+
+    &__cart {
+        grid-row: search-s/search-e;
+        grid-column: content-e/e;
+
+        width: 80px;
+        height: 3rem;
+        margin-top: 30px;
+        background-color: $color-light-gray;
+        border: 1px solid transparent;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 3rem;
+
+        &:hover {
+            border: 1px solid $color-aqua;
+            cursor: pointer;
+        }
     }
 
     &__books {
@@ -42,6 +61,34 @@
             text-align: center;
             align-self: center;
             justify-self: center;
+
+            width: 150px;
+            height: 200px;
+
+            border: 1px solid $color-light-gray;
+            box-shadow: 1px 2px 5px 1px solid rgba(0, 0, 0, 0.35);
+
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+
+            &:hover {
+                border: 1px solid $color-aqua;
+                cursor: pointer;
+            }
+
+            &__img {
+                grid-row: 1/-1;
+                grid-column: 1/-1;
+            }
+
+            &__title {
+                grid-row: 1/-1;
+                grid-column: 1/-1;
+
+                align-self: end;
+                margin-bottom: 20px;
+            }
         }
     }
 }
