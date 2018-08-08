@@ -3,7 +3,7 @@
     grid-column: s/e;
 
     display: grid;
-    grid-template-rows: [s header-s] 13.5rem [header-e search-s] 3rem [search-e books-s] 1fr [books-e e];
+    grid-template-rows: [s header-s] 13.5rem [header-e search-s] 8rem [search-e books-s] 1fr [books-e e];
     grid-template-columns: [s] 5rem [content-s] 1fr [content-e] 5rem [e];
 
     &__header {
@@ -21,9 +21,18 @@
         height: 3rem;
         border: 1px solid $color-light-gray;
         border-radius: 3rem;
-        margin: 30px 0px 0px 30px;
+        margin: 30px 0px 20px 30px;
         padding: 0px 25px;
         font-size: 1.5rem;
         line-height: 1.8rem;
+    }
+
+    &__books {
+        grid-row: books-s/books-e;
+        grid-column: content-s/content-e;
+
+        display: grid;
+        grid-template-rows: repeat(auto-fill, 200px);
+        grid-template-columns: repeat(auto-fill, 150px);
     }
 }
