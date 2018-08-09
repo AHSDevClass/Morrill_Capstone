@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
 import { Button } from './button';
+import { FormButton } from './formFields';
 
 export default class Home extends Component {
   
@@ -12,18 +13,18 @@ export default class Home extends Component {
         <Button className="home__cart" icon="fas fa-shopping-basket" />
         <div className="home__pullout">
           <div className="home__pullout__item">
-            <div className="home__pullout__item__title"></div>
-            <div className="home__pullout__item__sub"></div>
+            <div className="home__pullout__item__title">Star Wars: Thrawn</div>
+            <div className="home__pullout__item__sub">This is my description</div>
           </div>
           <div className="home__pullout__item">
-            <div className="home__pullout__item__title"></div>
-            <div className="home__pullout__item__sub"></div>
+            <div className="home__pullout__item__title">Star Wars: Annihilation</div>
+            <div className="home__pullout__item__sub">This is my description</div>
           </div>
           <div className="home__pullout__item">
-            <div className="home__pullout__item__title"></div>
-            <div className="home__pullout__item__sub"></div>
+            <div className="home__pullout__item__title">Cinder (Lunar Chronicles)</div>
+            <div className="home__pullout__item__sub">This is my description</div>
           </div>
-          <a className="home__pullout__button">Checkout</a>
+          <FormButton className="home__pullout__button" title="Checkout" />
         </div>
         <div className="home__books">
           <div className="home__books__book">

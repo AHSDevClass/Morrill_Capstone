@@ -58,19 +58,40 @@
         grid-column: content-e/e;
 
         background-color: $color-gray;
-        color: white;
 
         height: 500px;
         width: 350px;
 
-        // margin-left: 60px;
+        margin-left: 60px;
+
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
 
         &__item {
-            
+            margin: 10px 10px 0 10px;
+            background-color: white;
+
+            display: grid;
+            grid-template-rows: 24px 1fr;
+
+            &__title {
+                color: $color-cyan;
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 1.8rem;
+                font-family: $font-serif;
+            }
+
+            &__sub {
+                color: $color-gray;
+                line-height: 1.2rem;
+                font-family: $font-cairo;
+            }
         }
 
         &__button {
-
+            margin-top: 20px;
+            justify-self: center;
         }
     }
 

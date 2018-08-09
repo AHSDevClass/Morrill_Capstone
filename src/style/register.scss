@@ -2,3 +2,46 @@
     grid-row: s/e;
     grid-column: s/e;
 }
+
+.register-form {
+    display: grid;
+    grid-template-columns: [s] 1fr [input-s] 629px [input-e] 1fr [e];
+    justify-items: center;
+
+    &__title {
+        width: 100%;
+
+        margin-top: 66px;
+        margin-left: 60px;
+        grid-column: s/e;
+    }
+
+    &__name {
+        margin-top: 77px;
+        grid-column: input-s/input-e;
+    }
+
+    &__email,
+    &__pass,
+    &__confirm {
+        margin-top: 40px;
+        grid-column: input-s/input-e;
+    }
+
+    &__register {
+        margin-top: 88px;
+        grid-column: input-s/input-e;
+    }
+
+    &__links {
+        margin-top: 52px;
+        grid-column: input-s/input-e;
+    }
+
+    &__name,
+    &__email,
+    &__pass,
+    &__confirm {
+        transform: translateX(-64.5px);
+    }
+}

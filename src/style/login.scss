@@ -5,27 +5,39 @@
 
 .login-form {
     display: grid;
+    grid-template-columns: [s] 1fr [input-s] 629px [input-e] 1fr [e];
     justify-items: center;
 
     &__title {
         width: 100%;
 
         margin-top: 66px;
+        margin-left: 60px;
+        grid-column: s/e;
     }
 
     &__email {
         margin-top: 77px;
+        grid-column: input-s/input-e;
     }
 
     &__pass {
         margin-top: 40px;
+        grid-column: input-s/input-e;
     }
 
     &__login {
         margin-top: 88px;
+        grid-column: input-s/input-e;
     }
 
     &__links {
         margin-top: 52px;
+        grid-column: input-s/input-e;
+    }
+
+    &__email,
+    &__pass {
+        transform: translateX(-64.5px);
     }
 }

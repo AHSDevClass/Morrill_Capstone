@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RegisterForm from './registerForm';
 import Header from './header';
 
 class Register extends Component {
@@ -6,7 +7,7 @@ class Register extends Component {
     return (
       <div className="register">
         <Header small={true} />
-        ...register
+        <RegisterForm/>
       </div>
     )
   }
