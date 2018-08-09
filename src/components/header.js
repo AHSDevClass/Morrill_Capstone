@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import { Button } from './button';
 
 export default class Header extends Component {
-  handleAccount = () => {
+  onClick = () => {
     this.props.history.push('/dashboard');
+  }
+
+  onLogout = () => {
+    this.props.history.push('/login');
   }
 
   render() {
@@ -13,8 +17,10 @@ export default class Header extends Component {
         <div className='header'>
           <h1 className='header__title'>LocalLibrary</h1>
           <div className='header__links'>
-            <Button callback={() => this.handleAccount()} className='header__links__account header__links__link'>My Account</Button>
-            <a className='header__links__auth header__links__link'>Logout</a>
+            <Button className='header__links__link' icon='fas fa-book-reader'></Button>
+            <div className='header__links__title'>My Account</div>
+            <Button className='header__links__link' icon='fas fa-door-open'></Button>
+            <div className='header__links__title'>Logout</div>
           </div>
           <div className='header__bar'>
             <a className='header__bar__all header__bar__link'>All</a>

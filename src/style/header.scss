@@ -19,6 +19,7 @@
         align-self: center;
         color: $color-cyan;
         background-color: $color-light-gray;
+        font-family: $font-fancy;
     }
 
     &__links {
@@ -26,23 +27,39 @@
         grid-column: links-s/links-e;
 
         display: grid;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-columns: 75px 75px;
 
-        grid-column-gap: 22px;
+        grid-column-gap: 5px;
         height: 12px;
 
-        margin: 5px 30px;
+        margin: 5px 50px 0 0;
 
         justify-self: end;
 
-        font-family: $font-serif;
+        font-family: $font-main;
 
         &__link {
-            text-align: center;
+            justify-self: center;
+
+            grid-row: 1/2;
+
+            font-size: 16px;
+            line-height: 20px;
+            margin-right: 10px;
 
             &:hover {
                 cursor: pointer;
+            }
+        }
+
+        &__title {
+            text-align: center;
+            grid-row: 2/-1;
+
+            &:hover {
+                cursor: pointer;
+                color: $color-aqua;
             }
         }
     }
@@ -95,6 +112,7 @@
         text-align: center;
         align-self: center;
         color: $color-cyan;
+        font-family: $font-fancy;
     }
 
     &__link {

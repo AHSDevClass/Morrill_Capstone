@@ -48,12 +48,30 @@
         }
     }
 
+    &__pullout {
+        grid-row: search-s/books-e;
+        grid-column: content-e/e;
+
+        background-color: $color-light-gray;
+        z-index: -10;
+
+        margin-left: 60px;
+
+        &__item {
+
+        }
+
+        &__button {
+
+        }
+    }
+
     &__books {
         grid-row: books-s/books-e;
         grid-column: content-s/content-e;
 
         display: grid;
-        grid-template-rows: repeat(auto-fill, 200px);
+        grid-template-rows: repeat(200px);
         grid-template-columns: repeat(auto-fill, 150px);
 
         grid-column-gap: 15px;
@@ -80,7 +98,6 @@
 
                 .home__books__book__title {
                     opacity: 1;
-                    color: $color-aqua;
                 }
             }
 
@@ -103,6 +120,10 @@
                 margin: 20px;
 
                 opacity: 0;
+
+                color: $color-aqua;
+                font-family: $font-cairo;
+                font-weight: 700;
 
                 font-size: 1.2rem;
                 line-height: 1.4rem;
