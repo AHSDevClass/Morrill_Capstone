@@ -1,18 +1,31 @@
 .login {
-    grid-row: content-s/content-e;
-    grid-column: content-s/content-e;
+    grid-row: s/e;
+    grid-column: s/e;
 }
 
 .login-form {
+    display: grid;
+    justify-items: center;
+
     &__title {
-        
+        width: 100%;
+
+        margin-top: 66px;
     }
 
     &__email {
-
+        margin-top: 77px;
     }
 
     &__pass {
-        
+        margin-top: 40px;
+    }
+
+    &__login {
+        margin-top: 88px;
+    }
+
+    &__links {
+        margin-top: 52px;
     }
 }

@@ -6,6 +6,11 @@
     grid-template-rows: [s header-s] 13.5rem [header-e search-s] 8rem [search-e books-s] 1fr [books-e e];
     grid-template-columns: [s] 5rem [content-s] 1fr [content-e] 5rem [e];
 
+    // overflow-x: hidden;
+    // overflow-y: scroll;
+
+    padding-bottom: 5%;
+
     &__header {
         grid-row: header-s/header-e;
         grid-column: s/e;
@@ -52,13 +57,16 @@
         grid-row: search-s/books-e;
         grid-column: content-e/e;
 
-        background-color: $color-light-gray;
-        z-index: -10;
+        background-color: $color-gray;
+        color: white;
 
-        margin-left: 60px;
+        height: 500px;
+        width: 350px;
+
+        // margin-left: 60px;
 
         &__item {
-
+            
         }
 
         &__button {

@@ -1,9 +1,55 @@
 .form-input {
-    &__title {
+    grid-column: s/e;
 
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 129px 500px;
+
+    align-items: center;
+    width: 629px;
+    justify-content: center;
+
+    &__title {
+        grid-row: 1/-1;
+        grid-column: 1/2;
+
+        color: $color-aqua;
+        font-family: $font-cairo;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        font-weight: 500;
     }
 
     &__input {
-        
+        grid-row: 1/-1;
+        grid-column: 2/3;
+
+        height: 40px;
+        width: 500px;
+        border: 1px solid $color-light-gray;
+        border-radius: 5px;
+        padding-left: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
+
+.form-button {
+    &__button {
+        height: 40px;
+        width: 216px;
+        border-radius: 20px;
+        background-color: $color-aqua;
+
+        color: white;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: center;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
