@@ -19,10 +19,11 @@ export class FormInput extends Component {
 
 export class FormButton extends Component {
   render() {
-    const { className, title, input, type } = this.props;
+    const { className, title, input, type, callback } = this.props;
     return (
       <div className={`${className} form-button`}>
         <button 
+          onClick={callback} 
           className="form-button__button" 
           type={type} 
           {...input}

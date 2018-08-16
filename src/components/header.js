@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import { Button } from './button';
 
-export default class Header extends Component {
-  onClick = () => {
+class Header extends Component {
+  onAccount = () => {
     this.props.history.push('/dashboard');
   }
 
@@ -17,9 +19,9 @@ export default class Header extends Component {
         <div className='header'>
           <h1 className='header__title'>LocalLibrary</h1>
           <div className='header__links'>
-            <Button className='header__links__link' icon='fas fa-book-reader'></Button>
+            <Button callback={(event) => this.onAccount(event)} className='header__links__link' icon='fas fa-book-reader'></Button>
             <div className='header__links__title'>My Account</div>
-            <Button className='header__links__link' icon='fas fa-door-open'></Button>
+            <Button callback={(event) => this.onLogout(event)} className='header__links__link' icon='fas fa-door-open'></Button>
             <div className='header__links__title'>Logout</div>
           </div>
           <div className='header__bar'>
@@ -43,3 +45,5 @@ export default class Header extends Component {
     }
   }
 }
+
+export default connect(null)(Header);

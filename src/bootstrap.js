@@ -15,7 +15,7 @@ import Home from './components/home';
 import Register from './components/register';
 import Login from './components/login';
 import Dashboard from './components/dashboard/dashboard';
-
+import Checkout from './components/checkout';
 
 function main() {
   ReactDOM.render(
@@ -28,6 +28,7 @@ function main() {
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/dashboard" component={Dashboard} />
+            <Route path="/checkout" component={Checkout} />
           </Layout>
         </Switch>
       </BrowserRouter>

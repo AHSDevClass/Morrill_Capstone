@@ -34,6 +34,10 @@
     &__links {
         margin-top: 52px;
         grid-column: input-s/input-e;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 38px;
     }
 
     &__email,
